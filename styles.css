@@ -17,6 +17,7 @@
   font-family: 'Fira Mono', monospace;
   margin: 0;
   padding: 0;
+  color: #101010;
 }
 
 html {
@@ -34,7 +35,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 80%;
+  flex-basis: 70%;
   height: 60%;
   padding: 0 5% 0 0;
 }
@@ -42,7 +43,29 @@ main {
 aside {
   display: flex;
   flex-direction: column;
+  flex-basis: 30%;
   gap: 1rem;
+  font-size: 2rem;
+}
+
+button {
+  font-size: 2rem;
+}
+
+input[type='number'] {
+  font-size: 2rem;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+
+input[type='checkbox'] {
+  transform: scale(2);
+}
+
+label[for='await-check'] {
+  display: flex;
+  gap: 1rem;
+  margin-left: 0.4rem;
 }
 
 #squares {
