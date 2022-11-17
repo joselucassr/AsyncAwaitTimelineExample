@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Async Await Timeline</title>
+  </head>
+  <body>
+    <main>
+      <div id="squares">
+        <div id="async-div">Waiting</div>
+        <div id="sync-div" style="visibility: hidden">Sync</div>
+      </div>
+
+      <div id="timeline">
+        <div id="time-pos"></div>
+        <div id="async-timeline"></div>
+        <div id="sync-timeline"></div>
+      </div>
+    </main>
+
+    <aside>
+      <label for="delay-input">
+        Delay (ms)
+        <input type="number" id="delay-input" value="1000" />
+      </label>
+
+      <label for="await-check">
+        <input type="checkbox" id="await-check" />
+        Use await
+      </label>
+
+      <button type="button" id="run-btn">Run</button>
+      <button type="button" id="reset-btn">Reset</button>
+    </aside>
+
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
